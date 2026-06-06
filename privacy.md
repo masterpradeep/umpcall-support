@@ -25,7 +25,7 @@
   UmpCall does not collect any data from any user, including children.
 
   ## Contact
-  For questions about this privacy policy, contact: [YOUR-EMAIL@gmail.com]
+  For questions about this privacy policy, contact: [pk.tripathi700@gmail.com]
 
   ---
   © 2025 GullyDev
