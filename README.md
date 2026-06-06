@@ -3,7 +3,7 @@
   ## Contact
   For support, feedback, or questions about UmpCall, reach out to us at:
 
-  **Email:** [your-email@gmail.com](mailto:pk.tripathi700@gmail.com)
+  **Email:** [pk.tripathi700@gmail.com](mailto:pk.tripathi700@gmail.com)
 
   ## FAQ
 
