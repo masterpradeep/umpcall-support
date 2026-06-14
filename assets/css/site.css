@@ -82,7 +82,6 @@ img { max-width: 100%; height: auto; }
 .brand-icon {
   border-radius: 10px;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
-  background: #0d0d0d;
 }
 
 .site-nav {
@@ -724,7 +723,6 @@ img { max-width: 100%; height: auto; }
 
 .footer-logo {
   border-radius: 10px;
-  background: #0d0d0d;
 }
 
 .footer-meta {
