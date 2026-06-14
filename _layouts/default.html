@@ -4,15 +4,43 @@
   {% include head.html %}
   <title>{{ page.title }} · UmpCall</title>
 </head>
-<body class="legal-body">
+<body class="site-page">
   {% include nav.html %}
-  {% include legal-hero.html %}
-  <main class="page-content legal-page">
-    <div class="container prose">
-      {{ content }}
+
+  <section class="page-shell">
+    <div class="container page-shell-inner">
+      <nav class="doc-breadcrumb" aria-label="Breadcrumb">
+        <a href="{{ '/' | relative_url }}">Home</a>
+        <span class="doc-breadcrumb-sep" aria-hidden="true">/</span>
+        <span class="doc-breadcrumb-current" aria-current="page">{{ page.title }}</span>
+      </nav>
+
+      <div class="doc-layout">
+        {% include doc-toc.html %}
+        <div class="doc-main">
+          <nav class="doc-toc-mobile" id="doc-toc-mobile" aria-label="On this page" hidden>
+            <p class="doc-toc-title">On this page</p>
+            <div class="doc-toc-scroll" id="doc-toc-mobile-scroll"></div>
+          </nav>
+          <article class="doc-panel">
+            <header class="doc-panel-head">
+              <h1 class="doc-panel-title">{{ page.title }}</h1>
+              {% if page.description %}
+              <p class="doc-panel-deck">{{ page.description }}</p>
+              {% endif %}
+            </header>
+            <div class="doc-panel-body prose">
+              {{ content }}
+            </div>
+          </article>
+        </div>
+      </div>
     </div>
-  </main>
+  </section>
+
+  {% include home-divider.html %}
   {% include trust-strip.html %}
   {% include footer.html %}
+  <script src="{{ '/assets/js/doc-toc.js' | relative_url }}" defer></script>
 </body>
 </html>

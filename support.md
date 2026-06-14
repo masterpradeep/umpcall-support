@@ -9,7 +9,7 @@ permalink: /support/
 
 **App:** UmpCall — Cricket Toss, Counter & Scorebook  
 **Developer:** GullyDev  
-**Version:** 1.0.0  
+**Version:** 1.1.0  
 **Platforms:** iOS 13+, Android 5.0+ (API 21+)  
 **Package ID:** `com.umpire.umpire_toss_counter`
 

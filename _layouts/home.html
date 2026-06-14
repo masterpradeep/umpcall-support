@@ -5,7 +5,7 @@
   <title>UmpCall — Cricket Toss, Scorebook &amp; Club Sync</title>
   <meta name="description" content="Premium offline-first cricket app. Digital toss, ball-by-ball scorebook, umpire counter, optional club cloud &amp; live follow. Free. No ads.">
 </head>
-<body class="home-page">
+<body class="site-page home-page">
   {% include nav.html %}
 
   <section class="hero">
@@ -47,24 +47,21 @@
           <a href="{{ '/support/' | relative_url }}">Support</a>
         </p>
       </div>
-      <div class="hero-visual" aria-hidden="true">
-        <div class="phone-mock">
-          <div class="phone-screen">
-            <div class="mock-bar">
-              {% include app-icon.html size="xs" class="mock-bar-icon" %}
-              UmpCall
+      <div class="hero-visual">
+        <div class="screenshot-showcase" aria-label="UmpCall app previews">
+          <div class="screenshot-phone">
+            <div class="screenshot-carousel">
+              <img class="screenshot-slide screenshot-slide--1" src="{{ '/assets/screenshots/01_home.png' | relative_url }}" alt="UmpCall home screen — start match, toss, scorebook" width="430" height="932" loading="eager" decoding="async">
+              <img class="screenshot-slide screenshot-slide--2" src="{{ '/assets/screenshots/02_home_alt.png' | relative_url }}" alt="UmpCall match day hub and quick actions" width="430" height="932" loading="lazy" decoding="async">
+              <img class="screenshot-slide screenshot-slide--3" src="{{ '/assets/screenshots/03_scoring.png' | relative_url }}" alt="Ball-by-ball cricket scoring screen" width="430" height="932" loading="lazy" decoding="async">
+              <img class="screenshot-slide screenshot-slide--4" src="{{ '/assets/screenshots/04_live_match.png' | relative_url }}" alt="Live match follow with share code" width="430" height="932" loading="lazy" decoding="async">
             </div>
-            <div class="mock-hero-card">
-              {% include app-icon.html size="lg" class="mock-icon-wrap" %}
-              <div class="mock-title">Start Match</div>
-              <div class="mock-sub">Scorebook · Toss · Counter</div>
-              <div class="mock-score">
-                <span>142/3 <strong>18.4</strong></span>
-                <span>RR 7.6</span>
-              </div>
-            </div>
-            <div class="mock-row"><span class="mock-pill green">● Live</span> Club sync</div>
-            <div class="mock-row muted">Works offline on the field</div>
+          </div>
+          <div class="screenshot-labels" aria-hidden="true">
+            <span class="screenshot-label screenshot-label--1">Home</span>
+            <span class="screenshot-label screenshot-label--2">Match day</span>
+            <span class="screenshot-label screenshot-label--3">Scoring</span>
+            <span class="screenshot-label screenshot-label--4">Live follow</span>
           </div>
         </div>
       </div>
@@ -73,7 +70,9 @@
 
   {% include trust-strip.html %}
 
-  <section class="section">
+  {% include home-divider.html %}
+
+  <section class="section home-section">
     <div class="container">
       <h2 class="section-title">Everything you need on the field</h2>
       <p class="section-sub">Works without internet. Club &amp; live features when you want them.</p>
@@ -112,7 +111,9 @@
     </div>
   </section>
 
-  <section class="section section-alt">
+  {% include home-divider.html %}
+
+  <section class="section section-alt home-section">
     <div class="container steps-grid">
       <div>
         <h2 class="section-title">How club sync works</h2>
@@ -124,7 +125,8 @@
         <p class="callout">
           <strong>Keep codes confidential.</strong> Join codes and live match codes work like
           passwords — your club is responsible if they are shared publicly.
-          See <a href="{{ '/terms/' | relative_url }}">Terms §3</a>.
+          Read our
+          <a href="{{ '/terms/' | relative_url }}#3-accounts-and-club-access">Terms of Service — club &amp; join codes (Section&nbsp;3)</a>.
         </p>
       </div>
       <div class="stats-card">
@@ -135,7 +137,9 @@
     </div>
   </section>
 
-  <section class="section cta-section">
+  {% include home-divider.html %}
+
+  <section class="section cta-section home-section">
     <div class="container cta-box">
       {% include app-icon.html size="md" class="cta-icon-wrap" %}
       <h2>Need help or have feedback?</h2>

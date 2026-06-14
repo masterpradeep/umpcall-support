@@ -1,3 +1,3 @@
 <span class="app-icon app-icon--{{ include.size | default: 'sm' }}{% if include.class %} {{ include.class }}{% endif %}" aria-hidden="true">
-  <img src="{{ '/assets/icon-foreground.png' | relative_url }}" alt="" loading="eager">
+  <img src="{{ '/assets/icon-foreground.png' | relative_url }}" alt="" width="{% case include.size %}{% when 'xs' %}22{% when 'lg' %}56{% when 'md' %}48{% else %}36{% endcase %}" height="{% case include.size %}{% when 'xs' %}22{% when 'lg' %}56{% when 'md' %}48{% else %}36{% endcase %}" loading="eager" decoding="async">
 </span>

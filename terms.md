@@ -40,7 +40,7 @@ You must comply with applicable laws in your country. If you are under the age o
 
 ---
 
-## 3. Accounts and club access
+## 3. Accounts and club access {#3-accounts-and-club-access}
 
 - **No email login** — cloud features use an anonymous session on your device.
 - **Club roles** (admin, scorer, viewer) are assigned by **which join code** you enter, not by self-selection.
