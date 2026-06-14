@@ -1,0 +1,23 @@
+title: UmpCall
+description: Offline-first cricket toss, scorebook & club sync — by GullyDev
+url: https://masterpradeep.github.io
+baseurl: /umpcall-support
+lang: en
+
+# Update after App Store / Google Play approval:
+app_store_url: ""
+play_store_url: ""
+
+github_url: https://github.com/masterpradeep/umpcall-support
+support_email: support.umpcall@gmail.com
+support_url: mailto:support.umpcall@gmail.com
+developer: GullyDev
+package_id: com.umpire.umpire_toss_counter
+
+markdown: kramdown
+kramdown:
+  input: GFM
+
+exclude:
+  - ui-design-preview.html
+  - README.md

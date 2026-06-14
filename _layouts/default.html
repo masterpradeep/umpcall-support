@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% include head.html %}
+  <title>{{ page.title }} · UmpCall</title>
+</head>
+<body class="legal-body">
+  {% include nav.html %}
+  {% include legal-hero.html %}
+  <main class="page-content legal-page">
+    <div class="container prose">
+      {{ content }}
+    </div>
+  </main>
+  {% include footer.html %}
+</body>
+</html>

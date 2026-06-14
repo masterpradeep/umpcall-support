@@ -1,0 +1,29 @@
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a class="footer-logo-link" href="{{ '/' | relative_url }}">
+        <img src="{{ '/assets/logo.svg' | relative_url }}" alt="" width="40" height="40" class="footer-logo">
+        <strong>UmpCall</strong>
+      </a>
+      <p>Offline-first cricket scoring for umpires, clubs &amp; spectators.</p>
+      <p class="footer-meta">© {{ 'now' | date: '%Y' }} {{ site.developer }} · v1.0.0</p>
+    </div>
+    <div class="footer-links">
+      <h3>Legal</h3>
+      <ul>
+        <li><a href="{{ '/privacy/' | relative_url }}">Privacy Policy</a></li>
+        <li><a href="{{ '/support/' | relative_url }}">Support</a></li>
+        <li><a href="{{ '/terms/' | relative_url }}">Terms of Service</a></li>
+      </ul>
+    </div>
+    <div class="footer-links">
+      <h3>Contact</h3>
+      <ul>
+        <li><a href="mailto:{{ site.support_email }}">{{ site.support_email }}</a></li>
+        <li><a href="{{ '/support/' | relative_url }}">Support page</a></li>
+        <li><a href="{{ site.github_url }}" rel="noopener">Source code</a></li>
+        <li><span class="muted">{{ site.package_id }}</span></li>
+      </ul>
+    </div>
+  </div>
+</footer>

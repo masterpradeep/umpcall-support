@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>UmpCall — UI Design Preview</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #0a0a0a;
+      color: #f5f5f5;
+      padding: 32px 24px 48px;
+      line-height: 1.4;
+    }
+    h1 { font-size: 28px; font-weight: 700; letter-spacing: -0.5px; margin-bottom: 8px; }
+    .subtitle { color: #888; font-size: 15px; margin-bottom: 32px; }
+    .grid { display: flex; flex-wrap: wrap; gap: 40px; justify-content: center; }
+    .panel h2 { font-size: 14px; font-weight: 600; color: #aaa; margin-bottom: 12px; text-transform: uppercase; letter-spacing: 0.08em; }
+    .phone {
+      width: 320px;
+      background: #121218;
+      border-radius: 28px;
+      border: 1px solid #2a2a35;
+      overflow: hidden;
+    }
+    .blue { color: #6eb5ff; }
+    .green { color: #00C853; }
+    .muted { color: #777; }
+    .hero-card {
+      margin: 16px;
+      border-radius: 24px;
+      border: 1px solid rgba(110, 181, 255, 0.35);
+      overflow: hidden;
+    }
+    .hero-top { padding: 24px 28px; text-align: center; }
+    .hero-icon {
+      width: 56px; height: 56px; margin: 0 auto 16px;
+      background: rgba(110,181,255,0.1); border-radius: 14px;
+      border: 1px solid rgba(110,181,255,0.2);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 11px; font-weight: 700; color: #6eb5ff;
+    }
+    .hero-title { font-size: 26px; font-weight: 700; color: #6eb5ff; }
+    .hero-sub { font-size: 14px; color: #666; margin-top: 8px; }
+    .hero-divider { height: 1px; background: rgba(255,255,255,0.06); }
+    .hero-footer {
+      display: flex; align-items: center; gap: 14px;
+      padding: 14px 18px;
+      background: rgba(0, 200, 83, 0.07);
+    }
+    .hero-footer-icon {
+      width: 40px; height: 40px; border-radius: 12px;
+      background: rgba(0, 200, 83, 0.16);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 18px;
+    }
+    .hero-footer-title { font-size: 14px; font-weight: 700; color: #00C853; }
+    .hero-footer-sub { font-size: 12px; color: #666; margin-top: 2px; }
+    .appbar { padding: 14px 16px 12px; border-bottom: 1px solid #222; }
+    .appbar-back { color: #888; font-size: 18px; margin-right: 8px; }
+    .appbar-title { font-size: 18px; font-weight: 700; }
+    .appbar-sub { font-size: 12px; color: #666; margin-top: 2px; }
+    .content { padding: 12px 16px 20px; }
+    .pills { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+    .pill {
+      padding: 8px 12px; border-radius: 20px; font-size: 12px; font-weight: 600;
+      background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); color: #aaa;
+    }
+    .pill.live { border-color: rgba(0,200,83,0.3); color: #00C853; background: rgba(0,200,83,0.1); }
+    .pill.active { border-color: rgba(110,181,255,0.35); color: #6eb5ff; background: rgba(110,181,255,0.12); }
+    .pill.date-active { border-color: rgba(0,200,83,0.35); color: #00C853; background: rgba(0,200,83,0.12); }
+    .search {
+      padding: 14px 16px; border-radius: 16px; background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.06); color: #555; font-size: 15px; margin-bottom: 14px;
+    }
+    .label { font-size: 11px; font-weight: 700; letter-spacing: 1.2px; color: #555; margin: 12px 0 8px; }
+    .section { font-size: 11px; font-weight: 700; letter-spacing: 1.3px; color: #555; padding: 16px 16px 6px; }
+    .group {
+      margin: 0 16px 12px; border-radius: 20px; overflow: hidden;
+      border: 1px solid rgba(255,255,255,0.08); background: #16161e;
+    }
+    .group.live { background: rgba(0,200,83,0.06); border-color: rgba(0,200,83,0.18); }
+    .row {
+      display: flex; align-items: flex-start; gap: 12px; padding: 14px 16px;
+    }
+    .row + .row { border-top: 1px solid rgba(255,255,255,0.05); }
+    .dot { width: 10px; height: 10px; border-radius: 50%; margin-top: 6px; flex-shrink: 0; }
+    .dot.live { background: #00C853; box-shadow: 0 0 8px rgba(0,200,83,0.5); }
+    .dot.done { background: #555; }
+    .row-main { flex: 1; min-width: 0; }
+    .row-title { font-size: 15px; font-weight: 600; }
+    .row-sub { font-size: 13px; margin-top: 4px; }
+    .row-sub.live { color: #00C853; }
+    .row-sub.done { color: #888; }
+    .row-meta { text-align: right; font-size: 12px; color: #555; }
+    .row-meta .chev { margin-top: 6px; color: #6eb5ff; }
+    .legend { max-width: 720px; margin: 40px auto 0; padding: 20px; border-radius: 16px; border: 1px solid #222; background: #111; }
+    .legend h3 { font-size: 16px; margin-bottom: 12px; }
+    .legend li { font-size: 14px; color: #999; margin-bottom: 8px; margin-left: 18px; }
+  </style>
+</head>
+<body>
+  <h1>UmpCall — Match history UI</h1>
+  <p class="subtitle">Design preview · open this file in any browser · matches current app</p>
+
+  <div class="grid">
+    <div class="panel">
+      <h2>Home · Match day</h2>
+      <div class="phone" style="display:flex; flex-direction:column; padding: 16px; gap: 10px; min-height: 420px;">
+        <div class="hero-card" style="margin:0; flex:1; display:flex; flex-direction:column;">
+          <div class="hero-top" style="flex:1; display:flex; flex-direction:column; justify-content:center;">
+            <div class="hero-icon">42/3</div>
+            <div class="hero-title">Start Match</div>
+            <div class="hero-sub">Scorebook · Toss · Ball counter</div>
+          </div>
+        </div>
+        <div style="border-radius:16px; border:1px solid rgba(0,200,83,0.28); background:rgba(0,200,83,0.07); padding:12px 14px; display:flex; align-items:center; gap:12px;">
+          <div class="hero-footer-icon" style="width:44px;height:44px;margin:0;">↺</div>
+          <div style="flex:1">
+            <div class="hero-footer-title">Past matches</div>
+            <div class="hero-footer-sub">Finished games & live club matches</div>
+          </div>
+          <span class="green">›</span>
+        </div>
+        <p style="font-size: 12px; color: #555;">Hero = one job · Past matches = same row style as Manage Teams</p>
+      </div>
+    </div>
+
+    <div class="panel">
+      <h2>Match history screen</h2>
+      <div class="phone">
+        <div class="appbar">
+          <span class="appbar-back">←</span>
+          <div class="appbar-title">Match history</div>
+          <div class="appbar-sub">AdminTest · Admin</div>
+        </div>
+        <div class="content">
+          <div class="pills">
+            <span class="pill">12 matches</span>
+            <span class="pill live">1 live</span>
+            <span class="pill">11 finished</span>
+          </div>
+          <div class="search">🔍 Search teams or results</div>
+          <div class="label">STATUS</div>
+          <div class="pills">
+            <span class="pill active">All</span>
+            <span class="pill">Live</span>
+            <span class="pill">Finished</span>
+          </div>
+          <div class="label">DATE</div>
+          <div class="pills">
+            <span class="pill">All dates</span>
+            <span class="pill date-active">7 days</span>
+            <span class="pill">30 days</span>
+            <span class="pill">📅 Custom</span>
+          </div>
+        </div>
+
+        <div class="section">LIVE NOW</div>
+        <div class="group live">
+          <div class="row">
+            <div class="dot live"></div>
+            <div class="row-main">
+              <div class="row-title">TestTeam-1 vs TestTeam-2</div>
+              <div class="row-sub live">You are scoring on this phone</div>
+            </div>
+            <div class="row-meta">12:14<br><span class="chev green">▶</span></div>
+          </div>
+        </div>
+
+        <div class="section">TODAY</div>
+        <div class="group">
+          <div class="row">
+            <div class="dot done"></div>
+            <div class="row-main">
+              <div class="row-title">Admin XI vs Scorer XI</div>
+              <div class="row-sub done">Admin XI won by 4 runs</div>
+            </div>
+            <div class="row-meta">11:20<br><span class="chev">›</span></div>
+          </div>
+        </div>
+
+        <div class="section">YESTERDAY</div>
+        <div class="group">
+          <div class="row">
+            <div class="dot done"></div>
+            <div class="row-main">
+              <div class="row-title">TestTeam-1 vs TestTeam-2</div>
+              <div class="row-sub done">TestTeam-2 won by 2 wickets</div>
+            </div>
+            <div class="row-meta">Yesterday<br><span class="chev">›</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="legend">
+    <h3>How it works</h3>
+    <ul>
+      <li><strong class="green">Past matches</strong> — green footer on home hero; separate tap from Start Match</li>
+      <li><strong>Search + filters</strong> — combine status (All/Live/Finished) with date (7d/30d/Custom)</li>
+      <li><strong>Live section</strong> — pinned at top with green card; scorers see resume ▶</li>
+      <li><strong>Finished</strong> — grouped by Today / Yesterday / This week / Month</li>
+      <li><strong>Summary</strong> — shows “3 of 12 shown” when filters are active</li>
+    </ul>
+  </div>
+</body>
+</html>

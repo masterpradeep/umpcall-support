@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% include head.html %}
+  <title>UmpCall — Cricket Toss, Scorebook &amp; Club Sync</title>
+  <meta name="description" content="Premium offline-first cricket app. Digital toss, ball-by-ball scorebook, umpire counter, optional club cloud &amp; live follow. Free. No ads.">
+</head>
+<body class="home-page">
+  {% include nav.html %}
+
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">Offline-first · Free · No ads</p>
+        <h1>Score the match.<br><span class="text-accent">Sync the club.</span></h1>
+        <p class="hero-lead">
+          UmpCall is built for gully cricket and leagues — toss, full scorebook,
+          umpire counter, shared rosters, and live scores for spectators.
+        </p>
+        <div class="hero-actions">
+          {% if site.app_store_url != "" %}
+          <a class="store-badge" href="{{ site.app_store_url }}" rel="noopener">
+            <span class="store-label">Download on the</span>
+            <span class="store-name">App Store</span>
+          </a>
+          {% else %}
+          <span class="store-badge store-soon" title="Coming soon">
+            <span class="store-label">Coming soon on</span>
+            <span class="store-name">App Store</span>
+          </span>
+          {% endif %}
+          {% if site.play_store_url != "" %}
+          <a class="store-badge store-google" href="{{ site.play_store_url }}" rel="noopener">
+            <span class="store-label">Get it on</span>
+            <span class="store-name">Google Play</span>
+          </a>
+          {% else %}
+          <span class="store-badge store-google store-soon" title="Coming soon">
+            <span class="store-label">Coming soon on</span>
+            <span class="store-name">Google Play</span>
+          </span>
+          {% endif %}
+        </div>
+        <p class="hero-note">
+          <a href="{{ '/privacy/' | relative_url }}">Privacy</a> ·
+          <a href="{{ '/terms/' | relative_url }}">Terms</a> ·
+          <a href="{{ '/support/' | relative_url }}">Support</a>
+        </p>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="phone-mock">
+          <div class="phone-screen">
+            <div class="mock-bar">
+              <img src="{{ '/assets/logo.svg' | relative_url }}" alt="" width="20" height="20" class="mock-bar-logo">
+              UmpCall
+            </div>
+            <div class="mock-hero-card">
+              <img src="{{ '/assets/icon.png' | relative_url }}" alt="" width="56" height="56" class="mock-icon">
+              <div class="mock-title">Start Match</div>
+              <div class="mock-sub">Scorebook · Toss · Counter</div>
+              <div class="mock-score">
+                <span>142/3 <strong>18.4</strong></span>
+                <span>RR 7.6</span>
+              </div>
+            </div>
+            <div class="mock-row"><span class="mock-pill green">● Live</span> Club sync</div>
+            <div class="mock-row muted">Works offline on the field</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="trust-strip">
+    <div class="container trust-grid">
+      <div class="trust-item"><strong>No ads</strong><span>No analytics SDKs</span></div>
+      <div class="trust-item"><strong>No email login</strong><span>Anonymous cloud only</span></div>
+      <div class="trust-item"><strong>Free</strong><span>No in-app purchases</span></div>
+      <div class="trust-item"><strong>iOS &amp; Android</strong><span>API 21+ / iOS 13+</span></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Everything you need on the field</h2>
+      <p class="section-sub">Works without internet. Club &amp; live features when you want them.</p>
+      <div class="feature-grid">
+        <article class="feature-card">
+          <div class="feature-icon" aria-hidden="true">🪙</div>
+          <h3>Digital toss</h3>
+          <p>10 country coins + custom branded coin. Captain calls mid-air.</p>
+        </article>
+        <article class="feature-card">
+          <div class="feature-icon" aria-hidden="true">📖</div>
+          <h3>Full scorebook</h3>
+          <p>Ball-by-ball scoring, teams, scorecard, resume after app kill.</p>
+        </article>
+        <article class="feature-card">
+          <div class="feature-icon" aria-hidden="true">🔢</div>
+          <h3>Umpire counter</h3>
+          <p>Balls, overs, runs, wickets — undo, haptics, end-of-over voice.</p>
+        </article>
+        <article class="feature-card">
+          <div class="feature-icon" aria-hidden="true">☁️</div>
+          <h3>Club cloud</h3>
+          <p>Shared rosters, scorer handover, player stats, owner recovery.</p>
+        </article>
+        <article class="feature-card">
+          <div class="feature-icon" aria-hidden="true">📡</div>
+          <h3>Live follow</h3>
+          <p>Spectators enter a match code — no club membership needed.</p>
+        </article>
+        <article class="feature-card">
+          <div class="feature-icon" aria-hidden="true">🔒</div>
+          <h3>Private leagues</h3>
+          <p>Join codes control access — share only with your club.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container steps-grid">
+      <div>
+        <h2 class="section-title">How club sync works</h2>
+        <ol class="steps-list">
+          <li><strong>Create or join a club</strong> with a join code in Settings.</li>
+          <li><strong>Score a match</strong> — rosters and scores sync to your league.</li>
+          <li><strong>Hand over</strong> to another scorer with a pass code if needed.</li>
+        </ol>
+        <p class="callout">
+          <strong>Keep codes confidential.</strong> Join codes and live match codes work like
+          passwords — your club is responsible if they are shared publicly.
+          See <a href="{{ '/terms/' | relative_url }}">Terms §3</a>.
+        </p>
+      </div>
+      <div class="stats-card">
+        <div class="stat"><span class="stat-num">3</span><span class="stat-label">Club roles</span></div>
+        <div class="stat"><span class="stat-num">0</span><span class="stat-label">Ads</span></div>
+        <div class="stat"><span class="stat-num">100%</span><span class="stat-label">Offline toss &amp; counter</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section cta-section">
+    <div class="container cta-box">
+      <img src="{{ '/assets/logo.svg' | relative_url }}" alt="" width="48" height="48" class="cta-logo">
+      <h2>Need help or have feedback?</h2>
+      <p>Report bugs, privacy requests, or get setup help by email.</p>
+      <div class="cta-actions">
+        <a class="btn btn-primary" href="{{ '/support/' | relative_url }}">Support page</a>
+        <a class="btn btn-ghost" href="mailto:{{ site.support_email }}">Email support</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section store-section">
+    <div class="container store-legal">
+      <h2>Store listing URLs</h2>
+      <ul class="url-list">
+        <li><span class="url-label">Home</span><code>{{ site.url }}{{ site.baseurl }}/</code></li>
+        <li><span class="url-label">Privacy</span><code>{{ site.url }}{{ site.baseurl }}/privacy/</code></li>
+        <li><span class="url-label">Support</span><code>{{ site.url }}{{ site.baseurl }}/support/</code></li>
+        <li><span class="url-label">Terms</span><code>{{ site.url }}{{ site.baseurl }}/terms/</code></li>
+      </ul>
+    </div>
+  </section>
+
+  {% include footer.html %}
+</body>
+</html>

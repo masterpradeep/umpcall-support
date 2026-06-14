@@ -1,24 +1,27 @@
-# UmpCall Support
+# UmpCall — Public site (GitHub Pages)
 
-  ## Contact
-  For support, feedback, or questions about UmpCall, reach out to us at:
+Legal and support pages for the **UmpCall** cricket app.  
+App source code is in a separate private repository.
 
-  **Email:** [pk.tripathi700@gmail.com](mailto:pk.tripathi700@gmail.com)
+## Live URLs
 
-  ## FAQ
+| Page | URL |
+|------|-----|
+| Home | https://masterpradeep.github.io/umpcall-support/ |
+| Privacy | https://masterpradeep.github.io/umpcall-support/privacy/ |
+| Support | https://masterpradeep.github.io/umpcall-support/support/ |
+| Terms | https://masterpradeep.github.io/umpcall-support/terms/ |
 
-  **Q: Does UmpCall need internet?**
-  A: No. UmpCall works 100% offline.
+**Contact:** support.umpcall@gmail.com
 
-  **Q: How do I reset the counter?**
-  A: Tap the reset icon in the top right of the counter screen.
+## Enable GitHub Pages
 
-  **Q: Can I use my own coin images?**
-  A: Yes! Go to Toss → tap the settings icon → Custom Coin.
+1. Repo **Settings → Pages**
+2. Source: branch **`main`**, folder **`/ (root)`**
+3. Save — site live in ~1 minute
 
-  ## Privacy
-  UmpCall does not collect, store, or share any personal data.
+## Sync from app repo
 
-  ---
-  © 2025 GullyDev
+When legal text changes in the private app repo (`UmpCallApp/docs/`), copy updated files here and adjust `_config.yml` `baseurl` if needed.
 
+© GullyDev · UmpCall
