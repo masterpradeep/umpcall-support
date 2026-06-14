@@ -114,7 +114,7 @@ UmpCall, its branding, mascot, and app design are owned by GullyDev. You receive
 
 THE APP IS PROVIDED **“AS IS”** AND **“AS AVAILABLE”** WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT.
 
-We do not guarantee uninterrupted service, error-free scoring, permanent data storage, or that cloud sync will always succeed. Network outages, device failures, user error, and security incidents can cause data loss — maintain backups of important league records outside the app where required. See also our [Privacy Policy](/privacy/) (Section 7).
+We do not guarantee uninterrupted service, error-free scoring, permanent data storage, or that cloud sync will always succeed. Network outages, device failures, user error, and security incidents can cause data loss — maintain backups of important league records outside the app where required. See also our [Privacy Policy]({{ '/privacy/' | relative_url }}) (Section 7).
 
 ---
 
@@ -162,9 +162,9 @@ We may update these Terms. The “Last updated” date will change. Continued us
 
 ## 15. Contact
 
-- **Support:** [support.umpcall@gmail.com](mailto:support.umpcall@gmail.com) · [Support page](/support/)  
+- **Support:** [support.umpcall@gmail.com](mailto:support.umpcall@gmail.com) · [Support page]({{ '/support/' | relative_url }})  
 - **Legal / Terms:** [support.umpcall@gmail.com](mailto:support.umpcall@gmail.com)  
-- **Privacy:** [Privacy Policy](/privacy/)
+- **Privacy:** [Privacy Policy]({{ '/privacy/' | relative_url }})
 
 ---
 

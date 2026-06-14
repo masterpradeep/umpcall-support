@@ -24,7 +24,7 @@ permalink: /support/
 | **General support & bugs** | [support.umpcall@gmail.com](mailto:support.umpcall@gmail.com) | 3–5 business days |
 | **Privacy / data deletion** | Same email — subject **`Privacy:`** | Within 30 days |
 | **Report offensive content** | Same email — subject **`Report:`** | Within 72 hours |
-| **Terms questions** | Same email or see [Terms of Service](/terms/) | 3–5 business days |
+| **Terms questions** | Same email or see [Terms of Service]({{ '/terms/' | relative_url }}) | 3–5 business days |
 
 **When reporting a bug, include:**
 
@@ -40,9 +40,9 @@ permalink: /support/
 
 | Document | Link |
 |----------|------|
-| **Privacy Policy** | [/privacy/](/privacy/) |
-| **Terms of Service** | [/terms/](/terms/) |
-| **This support page** | [/support/](/support/) |
+| **Privacy Policy** | [Privacy Policy]({{ '/privacy/' | relative_url }}) |
+| **Terms of Service** | [Terms of Service]({{ '/terms/' | relative_url }}) |
+| **This support page** | [Support]({{ '/support/' | relative_url }}) |
 
 ---
 
@@ -149,12 +149,11 @@ Enable **Voice** in **Settings → Announcements**. UmpCall uses your device’s
 
 ---
 
-## Repository
+## Repository & technical docs
 
-This public repo hosts only the UmpCall **support and legal pages** for App Store and Google Play. App source is not published here.
-
-- **Issues / feedback:** [support.umpcall@gmail.com](mailto:support.umpcall@gmail.com)
-- **Site repo:** [github.com/masterpradeep/umpcall-support](https://github.com/masterpradeep/umpcall-support)
+- **Source:** [github.com/masterpradeep/UmpCallApp](https://github.com/masterpradeep/UmpCallApp)
+- **Store submission guide:** [APP_STORE_SUBMISSION.md on GitHub](https://github.com/masterpradeep/UmpCallApp/blob/main/APP_STORE_SUBMISSION.md)
+- **Backend setup (self-hosted leagues):** [supabase/DEPLOY.md on GitHub](https://github.com/masterpradeep/UmpCallApp/blob/main/supabase/DEPLOY.md)
 
 ---
 

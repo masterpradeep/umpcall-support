@@ -1,7 +1,6 @@
 # UmpCall — Public site (GitHub Pages)
 
-Legal and support pages for the **UmpCall** cricket app.  
-App source code is in a separate private repository.
+Legal and support pages for the **UmpCall** cricket app.
 
 ## Live URLs
 
@@ -14,14 +13,4 @@ App source code is in a separate private repository.
 
 **Contact:** support.umpcall@gmail.com
 
-## Enable GitHub Pages
-
-1. Repo **Settings → Pages**
-2. Source: branch **`main`**, folder **`/ (root)`**
-3. Save — site live in ~1 minute
-
-## Sync from app repo
-
-When legal text changes in the private app repo (`UmpCallApp/docs/`), copy updated files here and adjust `_config.yml` `baseurl` if needed.
-
-© GullyDev · UmpCall
+Enable Pages: Settings → Pages → `main` → `/ (root)`.
