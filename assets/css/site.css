@@ -87,6 +87,50 @@ img { max-width: 100%; height: auto; }
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
 }
 
+/* App mascot icon — matches in-app AppMascotIcon */
+.app-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  background: var(--bg);
+  border: 1px solid rgba(79, 195, 247, 0.35);
+  box-sizing: border-box;
+}
+.app-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+.app-icon--xs {
+  width: 22px;
+  height: 22px;
+  padding: 2px;
+  border-radius: 6px;
+}
+.app-icon--sm {
+  width: 36px;
+  height: 36px;
+  padding: 3px;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
+}
+.app-icon--md {
+  width: 48px;
+  height: 48px;
+  padding: 4px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+}
+.app-icon--lg {
+  width: 56px;
+  height: 56px;
+  padding: 4px;
+  border-radius: 14px;
+  margin: 0 auto 14px;
+}
+
 .site-nav {
   display: flex;
   gap: 4px;
@@ -270,6 +314,8 @@ img { max-width: 100%; height: auto; }
   gap: 8px;
 }
 .mock-bar-logo { border-radius: 5px; }
+.mock-bar-icon { vertical-align: middle; }
+.mock-icon-wrap { display: flex !important; margin-inline: auto; }
 .mock-dot {
   width: 8px;
   height: 8px;
@@ -536,10 +582,9 @@ img { max-width: 100%; height: auto; }
   border-radius: var(--radius-lg);
   padding: 48px 32px;
 }
-.cta-logo {
+.cta-icon-wrap {
+  display: inline-flex !important;
   margin-bottom: 16px;
-  border-radius: 12px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
 }
 .cta-box h2 { margin: 0 0 8px; font-size: 1.5rem; }
 .cta-box p { color: var(--text-muted); margin: 0 0 24px; }
@@ -615,12 +660,6 @@ img { max-width: 100%; height: auto; }
   display: flex;
   align-items: center;
   gap: 20px;
-}
-
-.legal-hero-logo {
-  flex-shrink: 0;
-  border-radius: 18px;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
 }
 
 .legal-hero-eyebrow {
@@ -775,10 +814,6 @@ img { max-width: 100%; height: auto; }
   margin-bottom: 4px;
 }
 .footer-logo-link:hover { text-decoration: none; color: var(--accent); }
-
-.footer-logo {
-  border-radius: 10px;
-}
 
 .footer-meta {
   font-size: 0.8125rem !important;

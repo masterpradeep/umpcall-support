@@ -51,11 +51,11 @@
         <div class="phone-mock">
           <div class="phone-screen">
             <div class="mock-bar">
-              <img src="{{ '/assets/icon.png' | relative_url }}" alt="" width="20" height="20" class="mock-bar-logo">
+              {% include app-icon.html size="xs" class="mock-bar-icon" %}
               UmpCall
             </div>
             <div class="mock-hero-card">
-              <img src="{{ '/assets/icon.png' | relative_url }}" alt="" width="56" height="56" class="mock-icon">
+              {% include app-icon.html size="lg" class="mock-icon-wrap" %}
               <div class="mock-title">Start Match</div>
               <div class="mock-sub">Scorebook · Toss · Counter</div>
               <div class="mock-score">
@@ -137,7 +137,7 @@
 
   <section class="section cta-section">
     <div class="container cta-box">
-      <img src="{{ '/assets/icon.png' | relative_url }}" alt="" width="48" height="48" class="cta-logo">
+      {% include app-icon.html size="md" class="cta-icon-wrap" %}
       <h2>Need help or have feedback?</h2>
       <p>Report bugs, privacy requests, or get setup help by email.</p>
       <div class="cta-actions">

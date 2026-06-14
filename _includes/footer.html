@@ -2,7 +2,7 @@
   <div class="container footer-grid">
     <div class="footer-brand">
       <a class="footer-logo-link" href="{{ '/' | relative_url }}">
-        <img src="{{ '/assets/icon.png' | relative_url }}" alt="" width="40" height="40" class="footer-logo">
+        {% include app-icon.html size="sm" %}
         <strong>UmpCall</strong>
       </a>
       <p>Offline-first cricket scoring for umpires, clubs &amp; spectators.</p>
