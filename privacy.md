@@ -6,7 +6,7 @@ permalink: /privacy/
 ---
 
 **Effective date:** June 11, 2026  
-**Last updated:** June 13, 2026
+**Last updated:** June 14, 2026
 
 **App:** UmpCall — Cricket Toss, Counter & Scorebook  
 **Developer / data controller:** GullyDev (UmpCall)  
@@ -119,7 +119,7 @@ We do **not** use your data for advertising, profiling, or marketing.
 
 | Recipient | Why | Data shared |
 |-----------|-----|-------------|
-| **Supabase** | Cloud hosting for club and live features | User-provided match/team data, anonymous session ID |
+| **Supabase** | Cloud hosting for club and live features (Ireland / EU region) | User-provided match/team data, anonymous session ID |
 | **Apple App Store / Google Play** | App distribution | Standard install and crash metadata per store policies (outside our direct control) |
 
 We do **not** sell or rent your information to data brokers or advertisers.
@@ -188,7 +188,7 @@ We do **not** sell personal information (CCPA “Do Not Sell” — not applicab
 
 ## 9. International users
 
-UmpCall is operated from **India**. Cloud data may be processed on servers in regions selected for our Supabase project (commonly **United States** or **European Union**). By using online features, you consent to this transfer for app functionality only.
+UmpCall is operated from the **United Kingdom**. Cloud data for club and live features is processed on **Supabase** servers in the **Ireland (EU)** region. By using online features, you consent to this transfer for app functionality only.
 
 ---
 
@@ -231,7 +231,7 @@ We may update this policy when features change. The “Last updated” date will
 | General support | [support.umpcall@gmail.com](mailto:support.umpcall@gmail.com) |
 | Privacy / data requests | Same email — subject **`Privacy:`** |
 | Report offensive content | Same email — subject **`Report:`** |
-| Grievance officer (India) | [support.umpcall@gmail.com](mailto:support.umpcall@gmail.com) — response within 30 days |
+| Privacy & data protection (UK) | [support.umpcall@gmail.com](mailto:support.umpcall@gmail.com) — response within 30 days |
 
 ---
 
