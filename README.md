@@ -13,4 +13,6 @@ Legal and support pages for the **UmpCall** cricket app.
 
 **Contact:** support.umpcall@gmail.com
 
+**App Store (iOS):** https://apps.apple.com/gb/app/umpcall/id6777279623
+
 Enable Pages: Settings → Pages → `main` → `/ (root)`.

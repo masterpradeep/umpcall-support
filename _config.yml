@@ -4,14 +4,14 @@ url: https://masterpradeep.github.io
 baseurl: /umpcall-support
 lang: en
 
-app_store_url: ""
+app_store_url: "https://apps.apple.com/gb/app/umpcall/id6777279623"
 play_store_url: ""
 
 github_url: https://github.com/masterpradeep/umpcall-support
 support_email: support.umpcall@gmail.com
 support_url: mailto:support.umpcall@gmail.com
 developer: GullyDev
-app_version: "1.1.0"
+app_version: "1.1.1"
 package_id: com.umpire.umpire_toss_counter
 
 markdown: kramdown
